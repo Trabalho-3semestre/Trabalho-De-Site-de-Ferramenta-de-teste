@@ -1,0 +1,83 @@
+:root{
+    --cor-principal: #333333;
+    --cor-secundaria: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    background-color: black;
+}
+
+#titulo{
+    font-size: 5rem;
+    font-family: "Seymour", sans-serif;
+    color: var(--cor-secundaria);
+}
+#links{
+    font-family: "Oswald", sans-serif;
+    text-decoration: none; 
+    color: var(--cor-secundaria);
+    padding-right: 2rem;
+
+
+}
+.navbar{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+#logo{
+    width: 6rem !important;
+    background-color: var(--cor-secundaria) !important;
+    border-radius: 20rem !important;
+    height: 6rem !important;
+
+}
+#video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 118.9rem;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
+}
+#QuemSoms{
+    position: absolute;
+    top: 25rem;
+    left: 35rem;
+}
+div>h1{
+ color: white;
+ font-size: 6rem;
+ letter-spacing: 5px;
+ font-family:"Pacifico",sans-serif ;
+}
+div>p{
+    color: white;
+    font-size: 1.7rem;
+}
+div{
+    width: 50rem;
+}
+#sectionButtons{
+    margin: 2rem 30rem;
+    border: 4px solid red;
+}
+div > button{
+    display: inline;
+    margin-left: 2rem;
+    width: 9rem;
+    height: 5rem;
+    border-radius: 20px;
+    font-size: 1.9rem;
+}

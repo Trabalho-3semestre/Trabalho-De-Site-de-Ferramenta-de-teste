@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "commitizen": "^4.3.0",
+    "mocha": "^10.4.0"
+  }
+}
