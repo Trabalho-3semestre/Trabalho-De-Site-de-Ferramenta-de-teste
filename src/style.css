@@ -152,3 +152,113 @@ header {
 }
 
 /* card-box */
+footer{
+    margin-top: 5rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#versionamento {
+    list-style: none;
+    padding: 0; /* Remova o preenchimento padrão da lista */
+    margin: 0; /* Remova a margem padrão da lista */
+}
+
+footer > div > ul {
+    list-style: none;
+    display: flex; /* Alterado para "flex" para alinhar os itens da lista em linha */
+    padding: 0; /* Remova o preenchimento padrão da lista */
+    margin: 0; /* Remova a margem padrão da lista */
+    gap: 1rem;
+    
+}
+
+#imgDeV {
+    width: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#imgDeVD {
+    width: 15px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.gradiente-branco-azul:hover {
+    background: linear-gradient(to bottom, blue, lightblue);
+}
+
+#imgDeVG {
+    width: 22px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 0.95rem;
+    justify-content: center;
+}
+
+.gradiente-preto-branco:hover {
+    background: linear-gradient(to bottom, #6f42c1, #FFD700);
+}
+
+#imgDeVF {
+    width: 22px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 0.95rem;
+    justify-content: center;
+}
+
+#imgDeVF:hover {
+    background: linear-gradient(to bottom, #ff0000, #4b0082);
+}
+
+#imgDeVT {
+    width: 35px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    padding: 1rem 0.50rem;
+    justify-content: center;
+}
+
+#imgDeVT:hover {
+    background: linear-gradient(to bottom, #000000, #00008B);
+}
+#imgLogo{
+    display: flex;
+    align-items: center;
+}
+#tituloFooter{
+    font-size: 3rem;
+    color: white;
+
+    
+}
+#logoFooter{
+    border-radius: 200rem;
+    width: 6rem !important;
+    margin: 1.5rem;
+    font-family: "Seymour", sans-serif;
+}
+div>h6{
+    color: white;
+    font-size: 20px;
+}
+#footerFinal{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#footerFinal > p{
+    color: white;
+}
