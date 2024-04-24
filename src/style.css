@@ -45,10 +45,10 @@ header {
 }
 
 #logo {
-    width: 6rem !important;
-    background-color: var(--cor-secundaria) !important;
-    border-radius: 20rem !important;
-    height: 6rem !important;
+    width: 6rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 20rem;
+    height: 6rem;
 
 }
 
@@ -94,7 +94,7 @@ header {
     position: relative;
     width: 250px;
     height: 250px;
-    background-color: #1b1543;
+    background-color: #c2e3ff;
     border-radius: 20px;
     box-shadow: 0 35px 75px rgba(0, 0, 0, 0.45);
     transition: 0.5s;
@@ -152,6 +152,8 @@ header {
 }
 
 /* card-box */
+
+/* Footer */
 footer{
     margin-top: 5rem;
     background-color: black;
@@ -171,7 +173,6 @@ footer > div > ul {
     padding: 0; /* Remova o preenchimento padrão da lista */
     margin: 0; /* Remova a margem padrão da lista */
     gap: 1rem;
-    
 }
 
 #imgDeV {
@@ -262,3 +263,74 @@ div>h6{
 #footerFinal > p{
     color: white;
 }
+/* Footer */
+
+/* Barra de Pesquisa */
+.pesquisa {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-pesquisa {
+    background: rgb(180, 203, 255);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: pulse 3s linear infinite;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(180, 203, 255, .7), 0 0 0 0 rgba(180, 203, 255, .7)
+    }
+    40%
+    {
+        box-shadow: 0 0 0 50px rgba(180, 203, 255, 0), 0 0 0 0 rgba(180, 203, 255, .7)
+    }
+    80%
+    {
+        box-shadow: 0 0 0 50px rgba(180, 203, 255, 0), 0 0 0 30px rgba(180, 203, 255, 0)
+    }
+    100%
+    {
+        box-shadow: 0 0 0 0 rgba(180, 203, 255, 0), 0 0 0 30px rgba(180, 203, 255, 0)
+    }
+}
+
+.inp-pesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 20px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.btn-pesquisa {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.caixa-pesquisa:hover > .inp-pesquisa {
+    width: 240px;
+    padding: 0 8px;
+}
+
+/* Barra de Pesquisa */
