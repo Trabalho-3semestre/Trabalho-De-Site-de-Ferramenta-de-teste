@@ -54,17 +54,16 @@ header {
 
 #video-background {
     position: relative;
-    top: 0;
-    left: 0;
-    width: 118.9rem;
+    object-fit: cover;
+    width: 100%;
     z-index: -1;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
 }
 
 .QuemSomos {
     position: absolute;
-    left: 52%;
-    top: 70%;
+    top: 65%;
+    left: 50%;
     transform: translate(-50%,-50%);
     color: white;
     font-size: 1.7rem;
