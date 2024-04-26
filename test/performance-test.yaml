@@ -1,0 +1,13 @@
+config:
+  target: 'http://localhost:3000'  
+  phases:
+    - duration: 60                   
+      arrivalRate: 10                
+  defaults:
+    headers:
+      User-Agent: 'Artillery Load Tester'
+
+scenarios:
+  - flow:                             
+      - get:
+          url: 'https://trabalho-3semestre.github.io/Trabalho-De-Site-de-Ferramenta-de-teste/src/index.html'

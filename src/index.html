@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,131 +12,111 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=Pacifico&family=Rowdies:wght@300;400;700&family=Seymour+One&display=swap"
         rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="nome-logo">
-            <img id="logo" src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="">
-            <h1 id="titulo">Beatrice</h1>
-        </div>
-        <div class="pesquisa">
-            <div class="caixa-pesquisa">
-                <input type="text" class="inp-pesquisa" placeholder="Pesquisar">
-                <a href="#" class="btn-pesquisa">
-                    <img src="../img/loupe.png" alt="Lupa" width="20px" height="20px" color="white">
-                </a>
-            </div>
+            <img src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="Logo">
+            <h1>Beatrice</h1>
         </div>
         <nav class="navbar">
-            <a id="links" href="">Conteudo</a>
-            <a id="links" href="#quemSomos">Quem Somos</a>
-            <a id="links" href="https://github.com/Trabalho-3semestre/Trabalho-De-Site-de-Ferramenta-de-teste"
-                target="_blank">Github</a>
         </nav>
     </header>
-    <main>
-        <video autoplay muted loop id="video-background">
-            <source src="../img/0418.mp4" type="video/mp4">
+    <div class="pesquisa">
+        <div class="caixa-pesquisa">
+            <input type="text" class="inp-pesquisa" placeholder="Pesquisar" id="barraDePesquisa">
+            <a href="#" class="btn-pesquisa">
+                <img src="../img/loupe.png" alt="Lupa" width="20px" height="20px" color="white">
+            </a>
+        </div>
+    </div>
 
-        </video>
-        <div class="QuemSomos">
-            <h1>Quem Somos ?</h1>
-            <div class="text-QuemSomos">
-                <p>A Beatrice é uma empresa apaixonada por tornar o universo dos testes de software acessível e
-                    compreensível para estudantes e profissionais iniciantes. Oferecemos uma plataforma online dedicada
-                    a
-                    fornecer recursos educacionais e ferramentas especializadas para facilitar a aprendizagem e prática
-                    nesta área vital da engenharia de software.</p><br>
-                <p>Nosso site serve como um hub centralizado para uma ampla gama de informações sobre testes de
-                    software.
-                    Desde conceitos básicos até técnicas avançadas, cobrimos todos os aspectos essenciais para aqueles
-                    que
-                    estão entrando neste campo empolgante. Além disso, oferecemos tutoriais passo a passo, estudos de
-                    caso
-                    práticos e exemplos de código para ajudar os usuários a aprimorar suas habilidades.</p>
+    <div class="card-box">
+        <div class="card">
+            <div class="img-box" style="width: 60%;">
+                <img src="../img/logoSelenium.png" alt="Selenium logo">
+            </div>
+            <div class="text-box">
+                <h1>Selenium</h1>
+                <p>Selenium é um framework portátil para testar aplicativos web. O Selenium fornece uma ferramenta
+                    de reprodução para a criação de testes funcionais sem a necessidade de aprender uma linguagem de
+                    script de teste.</p>
             </div>
         </div>
-
-        <div class="card-box">
-            <div class="card">
-                <div class="img-box" style="width: 60%;">
-                    <img src="../img/logoSelenium.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>Selenium</h1>
-                    <p>Selenium é um framework portátil para testar aplicativos web. O Selenium fornece uma ferramenta
-                        de reprodução para a criação de testes funcionais sem a necessidade de aprender uma linguagem de
-                        script de teste.</p>
-                </div>
+        <div class="card">
+            <div class="img-box" style="width: 100%;">
+                <img src="../img/ranorex-studio-logo.webp" alt="Ranorex Logo">
             </div>
-            <div class="card">
-                <div class="img-box" style="width: 100%;">
-                    <img src="../img/ranorex-studio-logo.webp" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>Ranorex Studio</h1>
-                    <p>Ranorex Studio é uma estrutura de automação de teste GUI fornecida pela Ranorex GmbH, uma empresa
-                        de desenvolvimento de software. A estrutura é usada para o teste de aplicativos de desktop,
-                        baseados na web e móveis.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-box" style="width: 60%;">
-                    <img src="../img/Logotelerikpng.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>Progress Telerik</h1>
-                    <p>Telerik oferece ferramentas de software para aplicações web, móveis, desktop, ferramentas e
-                        serviços de assinatura para desenvolvimento de aplicativos multiplataforma. Empresa focada em
-                        ferramentas de desenvolvimento</p>
-                </div>
+            <div class="text-box">
+                <h1>Ranorex Studio</h1>
+                <p>Ranorex Studio é uma estrutura de automação de teste GUI fornecida pela Ranorex GmbH, uma empresa
+                    de desenvolvimento de software. A estrutura é usada para o teste de aplicativos de desktop,
+                    baseados na web e móveis.</p>
             </div>
         </div>
-        <div class="card-box">
-            <div class="card">
-                <div class="img-box" style="width: 60%;">
-                    <img src="../img/LogoJUnit.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>JUnit</h1>
-                    <p>Estrutura de teste unitário para Java. Elas permitem que os desenvolvedores escrevam e executem
-                        testes automatizados para garantir que partes específicas de seus códigos estejam funcionando
-                        corretamente</p>
-                </div>
+        <div class="card">
+            <div class="img-box" style="width: 60%;">
+                <img src="../img/Logotelerikpng.png" alt="Telerik logo">
             </div>
-            <div class="card">
-                <div class="img-box" style="width: 60%;">
-                    <img src="../img/LogoCucumber.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>Cucumber</h1>
-                    <p>Uma ferramenta de automação de teste baseada em comportamento que permite escrever testes em uma
-                        linguagem de domínio específico (Gherkin) que é legível para não programadores.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-box" style="width: 100%;">
-                    <img src="../img/LogoTestComplete.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>Test Complete</h1>
-                    <p>Uma ferramenta de automação de teste funcional que oferece suporte a testes em uma variedade de
-                        plataformas, incluindo aplicativos da web, desktop e móveis.</p>
-                </div>
+            <div class="text-box">
+                <h1>Progress Telerik</h1>
+                <p>Telerik oferece ferramentas de software para aplicações web, móveis, desktop, ferramentas e
+                    serviços de assinatura para desenvolvimento de aplicativos multiplataforma. Empresa focada em
+                    ferramentas de desenvolvimento</p>
             </div>
         </div>
-    </main>
+    </div>
+    <div class="card-box">
+        <div class="card">
+            <div class="img-box" style="width: 60%;">
+                <img src="../img/LogoJUnit.png" alt="JUnit logo">
+            </div>
+            <div class="text-box">
+                <h1>JUnit</h1>
+                <p>Estrutura de teste unitário para Java. Elas permitem que os desenvolvedores escrevam e executem
+                    testes automatizados para garantir que partes específicas de seus códigos estejam funcionando
+                    corretamente</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box" style="width: 60%;">
+                <img src="../img/LogoCucumber.png" alt="Cucumber logo">
+            </div>
+            <div class="text-box">
+                <h1>Cucumber</h1>
+                <p>Uma ferramenta de automação de teste baseada em comportamento que permite escrever testes em uma
+                    linguagem de domínio específico (Gherkin) que é legível para não programadores.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box" style="width: 100%;">
+                <img src="../img/LogoTestComplete.png" alt="TestComplete logo">
+            </div>
+            <div class="text-box">
+                <h1>Test Complete</h1>
+                <p>Uma ferramenta de automação de teste funcional que oferece suporte a testes em uma variedade de
+                    plataformas, incluindo aplicativos da web, desktop e móveis.</p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div id="imgLogo">
-            <img src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="" id="logoFooter">
-            <h4 id="tituloFooter">Beatrice</h4>
+        <div class="logoFooter">
+            <img src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="Logo">
         </div>
-        <div>
-            <h6>Professor : </h6>
-        </div>
-        <div>
-            <h6>Alunos : João Marques, Kauan Santos, João Cunha, Felipe Araujo, Lucas Santiago</h6>
+        <div class="participantes">
+            <div class="link-footer">
+                <a href="paginasHtml/quemSomos.html">Quem Somos?</a>
+                <a href="https://github.com/Trabalho-3semestre/Trabalho-De-Site-de-Ferramenta-de-teste"
+                    target="_blank">Github</a>
+            </div>
+            <h5>Professor : </h5>
+            <h5>Alunos : João Marques, Kauan Santos, João Cunha, Felipe Araujo, Lucas Santiago, Guilherme
+                Evangelista</h5>
+            <div class="copy-footer">
+                <p>&#169 2024 All Rights Reserved </p>
+            </div>
         </div>
         <div id="versionamento">
             <ul>
@@ -150,9 +130,6 @@
                 <li><a href="" target="_blank" rel="noopener noreferrer"><img src="../img/Trello-Emblem.png" alt=""
                             id="imgDeVT"></a></li>
             </ul>
-        </div>
-        <div id="footerFinal">
-            <p>&#169 2024 All Rights Reserved </p>
         </div>
     </footer>
 </body>
