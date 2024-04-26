@@ -1,6 +1,11 @@
 :root {
     --cor-principal: #333333;
     --cor-secundaria: white;
+    --azul1: #3153d0;
+    --azul2: #364c93;
+    --cinza1: #99aab5;
+    --cinza2: #2c2f33;
+    --cinza3: #23272a;
 }
 
 * {
@@ -8,13 +13,18 @@
     margin: 0;
 }
 
+body{
+    background-color: var(--cinza2);
+}
+
+/* Header */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid black;
     padding: 1rem;
-    background-color: black;
+    background-color: var(--cinza3);
 }
 
 .nome-logo {
@@ -23,19 +33,11 @@ header {
     align-items: center;
 }
 
-#titulo {
+.nome-logo h1 {
     margin-left: 20px;
     font-size: 3rem;
     font-family: "Seymour", sans-serif;
     color: var(--cor-secundaria);
-}
-
-#links {
-    font-family: "Oswald", sans-serif;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    padding-right: 2rem;
-
 }
 
 .navbar {
@@ -44,113 +46,14 @@ header {
     font-size: 1.4rem;
 }
 
-#logo {
+.nome-logo img {
     width: 6rem;
     background-color: var(--cor-secundaria);
     border-radius: 20rem;
     height: 6rem;
 
 }
-
-#video-background {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    z-index: -1;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
-}
-
-.QuemSomos {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-size: 1.7rem;
-    letter-spacing: 5px;
-    font-family: "Pacifico", sans-serif;
-}
-
-.text-QuemSomos {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* card-box */
-
-.card-box {
-    margin-top: 100px;
-    border-color: (var(--cor-principal));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    background-color: #c2e3ff;
-    border-radius: 20px;
-    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.45);
-    transition: 0.5s;
-    color: white;
-}
-
-.card:hover {
-    width: 350px;
-    height: 400px;
-}
-
-.card .img-box {
-    position: absolute;
-    width: 250px;
-    height: auto;
-    transition: 0.5s;
-}
-
-.card:hover .img-box {
-    top: -100px;
-    scale: 0.82;
-}
-
-.card .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    position: absolute;
-    top: 250px;
-    width: 100%;
-    padding: 0 30px;
-    text-align: center;
-    height: 30px;
-    overflow: hidden;
-    transition: 0.5s;
-    font-size: 1.3rem;
-}
-
-.card:hover .text-box{
-    top: 130px;
-    height: 250px;
-
-}
-
-.text-box h1{
-    margin-top: 25px;
-    font-size: 1.5;
-    color: black;
-}
-
-/* card-box */
+/* Header */
 
 /* Footer */
 footer{
@@ -264,6 +167,82 @@ div>h6{
 }
 /* Footer */
 
+/* card-box */
+
+.card-box {
+    margin-top: 100px;
+    border-color: (var(--cor-principal));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: var(--cinza3);
+    border-radius: 20px;
+    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.45);
+    transition: 0.5s;
+    color: white;
+}
+
+.card:hover {
+    width: 350px;
+    height: 400px;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.82;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 1.3rem;
+}
+
+.card:hover .text-box {
+    top: 130px;
+    height: 250px;
+
+}
+
+.text-box h1 {
+    margin-top: 25px;
+    font-size: 1.5;
+    color: black;
+}
+
+/* card-box */
+
 /* Barra de Pesquisa */
 .pesquisa {
     display: flex;
@@ -281,22 +260,20 @@ div>h6{
     animation: pulse 3s linear infinite;
 }
 
-@keyframes pulse
-{
-    0%
-    {
+@keyframes pulse {
+    0% {
         box-shadow: 0 0 0 0 rgba(180, 203, 255, .7), 0 0 0 0 rgba(180, 203, 255, .7)
     }
-    40%
-    {
+
+    40% {
         box-shadow: 0 0 0 50px rgba(180, 203, 255, 0), 0 0 0 0 rgba(180, 203, 255, .7)
     }
-    80%
-    {
+
+    80% {
         box-shadow: 0 0 0 50px rgba(180, 203, 255, 0), 0 0 0 30px rgba(180, 203, 255, 0)
     }
-    100%
-    {
+
+    100% {
         box-shadow: 0 0 0 0 rgba(180, 203, 255, 0), 0 0 0 30px rgba(180, 203, 255, 0)
     }
 }
@@ -327,7 +304,7 @@ div>h6{
     transition: .5s;
 }
 
-.caixa-pesquisa:hover > .inp-pesquisa {
+.caixa-pesquisa:hover>.inp-pesquisa {
     width: 240px;
     padding: 0 8px;
 }

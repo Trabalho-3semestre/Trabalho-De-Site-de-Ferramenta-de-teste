@@ -1,0 +1,181 @@
+:root {
+    --azul1: #3153d0;
+    --azul2: #364c93;
+    --cinza1: #99aab5;
+    --cinza2: #2c2f33;
+    --cinza3: #23272a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cinza2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box principal */
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80vh;
+    background-color: var(--cinza3);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.35)
+}
+
+.img-login {
+    background-color: var(--cinza1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: animatedImages ease 1.8s forwards;
+}
+
+.img-login img {
+    max-width: 90%;
+    height: auto;
+}
+/* Box principal */
+
+.form-box {
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    animation: animatedForms ease 2.5s forwards;
+}
+
+.form-header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 0.25rem;
+    background-color: var(--azul1);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inp-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+}
+
+.inp-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 6px #00000010;
+    color: black;
+}
+
+.inp-box input:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.inp-box input:focus-visible {
+    outline: 3px solid var(--azul1);
+}
+
+.inp-box input::placeholder {
+    color: #000000be;
+}
+
+.btn-continue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-continue a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--azul1);
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    text-decoration: none;
+}
+
+.btn-continue:hover a,
+.btn-continue:hover button {
+    background-color: var(--azul2);
+}
+
+.btn-continue a button{
+    background-color: var(--azul1);
+    border: none;
+}
+
+.quest-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quest {
+    display: flex;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 10;
+}
+
+@keyframes animatedForms {
+    0%{
+        visibility: hidden;
+        width: 0%;
+    }
+    30%{
+        visibility: hidden;
+    }
+
+    60%{
+        visibility: visible;
+        opacity: 0.7;
+        
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+        width: 40%;
+    }
+}
+
+@keyframes animatedImages {
+    0%{
+        visibility: hidden;
+        width: 0%;
+    }
+    30%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: visible;
+        opacity: 0.85;
+        
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+        width: 60%;
+    }
+}
