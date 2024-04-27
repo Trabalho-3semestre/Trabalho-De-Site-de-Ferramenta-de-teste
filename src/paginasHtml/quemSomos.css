@@ -11,55 +11,72 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
-
-body {
-    height: 100vh;
-}
-
 /* Header */
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--cinza3);
+    padding: 0.7rem;
+    background-color: black;
+    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.55);
+    z-index: 1000;
+    font-family: "Seymour", sans-serif;
 }
+
 
 .nome-logo {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-}
-
-#titulo {
-    margin-left: 20px;
-    font-size: 3rem;
-    font-family: "Seymour", sans-serif;
-    color: var(--cor-secundaria);
-}
-
-#links {
-    font-family: "Oswald", sans-serif;
+    justify-content: space-between;
     text-decoration: none;
-    color: var(--cor-secundaria);
-    padding-right: 2rem;
+}
 
+.nome-logo img {
+    width: 4rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 20rem;
+    height: 4rem;
+}
+
+.nome-logo a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* NavBar */
+.btn-navbar {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--cinza1);
+    border-radius: 7px;
+    margin-left: 1rem;
+}
+
+.link-navbar {
+    text-decoration: none;
 }
 
 .navbar {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 1rem;
     font-size: 1.4rem;
+    margin-right: 3rem;
 }
 
-#logo {
-    width: 6rem;
-    background-color: var(--cor-secundaria);
-    border-radius: 20rem;
-    height: 6rem;
+/* Caixa pesquisa header*/
+#pesquisa {
+    margin: 0;
+}
 
+#caixa-pesquisa {
+    height: 30px;
 }
 
 /* Header */
@@ -74,7 +91,7 @@ header {
 
 
 .QuemSomos {
-    position: absolute;
+    position: relative;
     z-index: 2;
     color: white;
     font-size: 1.4rem;
@@ -87,7 +104,7 @@ header {
 }
 
 .QuemSomos h1 {
-    margin-top: 3rem;
+    margin-top: 18vh;
 }
 
 .text-QuemSomos {

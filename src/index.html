@@ -12,41 +12,53 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=Pacifico&family=Rowdies:wght@300;400;700&family=Seymour+One&display=swap"
         rel="stylesheet">
-<<<<<<< HEAD
-        <script type="module" src="./main.js" defer ></script>
-=======
-    <script src="main.js" defer></script>
->>>>>>> e315fa05d208ab4355d196ee9e924f17b76f9f2e
+    <script type="module" src="./main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="nome-logo">
-            <img src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="Logo">
-            <h1>Beatrice</h1>
-            <img id="logo" src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="">
-            <h1 id="titulo">Beatrice</h1>
+            <a href="/src/index.html"><img src="../img/WhatsApp Image 2024-04-18 at 09.33.35.jpeg" alt="Logo"></a>
+            <a href="/src/index.html">
+                <h1>Beatrice</h1>
+            </a>
         </div>
-<<<<<<< HEAD
-        <div class="pesquisa">
-            <div class="caixa-pesquisa">
+        <div class="pesquisa" id="pesquisa">
+            <div class="caixa-pesquisa" id="caixa-pesquisa">
                 <input type="text" class="inp-pesquisa" placeholder="Pesquisar" id="barraDePesquisa">
-                <a href="#" class="btn-pesquisa" id="btnPesquisa">
+                <a href="#" class="btn-pesquisa" id="btn-pesquisa">
                     <img src="../img/loupe.png" alt="Lupa" width="20px" height="20px" color="white">
                 </a>
             </div>
         </div>
-=======
->>>>>>> e315fa05d208ab4355d196ee9e924f17b76f9f2e
         <nav class="navbar">
+            <a class="link-navbar" href="../src/paginasHtml/login.html">Login</a>
+            <a class="btn-navbar" href="../src/paginasHtml/cadastro.html">Cadastrar-se</a>
         </nav>
     </header>
-    <div class="pesquisa">
-        <div class="caixa-pesquisa">
-            <input type="text" class="inp-pesquisa" placeholder="Pesquisar" id="barraDePesquisa">
-            <a href="#" class="btn-pesquisa">
-                <img src="../img/loupe.png" alt="Lupa" width="20px" height="20px" color="white">
-            </a>
+
+    <div class="banner">
+        <div class="textBox-banner">
+            <div class="text-banner" id="title-banner">
+                <p>Seu site para a busca de ferramentas de testes de softwares</p>
+            </div>
+            <div class="text-banner">
+                <p>Faça o login para poder registrar suas ferramentas favoritas</p>
+            </div>
+            <div class="text-banner">
+                <p>Faça a sua consulta:</p>
+            </div>
+            <div class="pesquisa">
+                <div class="caixa-pesquisa">
+                    <input type="text" class="inp-pesquisa" placeholder="Pesquisar">
+                    <a href="#" class="btn-pesquisa" id="btn-pesquisa">
+                        <img src="../img/loupe.png" alt="Lupa" width="20px" height="20px" color="white">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="img-banner">
+            <img src="../img/imgBanner.svg" alt="Imagem Ilustrativa banner">
         </div>
     </div>
 
@@ -60,6 +72,8 @@
                 <p>Selenium é um framework portátil para testar aplicativos web. O Selenium fornece uma ferramenta
                     de reprodução para a criação de testes funcionais sem a necessidade de aprender uma linguagem de
                     script de teste.</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://www.selenium.dev/documentation/"> Selenium</a></h4>
             </div>
         </div>
         <div class="card">
@@ -71,6 +85,8 @@
                 <p>Ranorex Studio é uma estrutura de automação de teste GUI fornecida pela Ranorex GmbH, uma empresa
                     de desenvolvimento de software. A estrutura é usada para o teste de aplicativos de desktop,
                     baseados na web e móveis.</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://www.ranorex.com/help-center/"> Ranorex</a></h4>
             </div>
         </div>
         <div class="card">
@@ -81,11 +97,11 @@
                 <h1>Progress Telerik</h1>
                 <p>Telerik oferece ferramentas de software para aplicações web, móveis, desktop, ferramentas e
                     serviços de assinatura para desenvolvimento de aplicativos multiplataforma. Empresa focada em
-                    ferramentas de desenvolvimento</p>
+                    ferramentas de desenvolvimento.</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://www.telerik.com/documentation"> Telerik</a></h4>
             </div>
         </div>
-    </div>
-    <div class="card-box">
         <div class="card">
             <div class="img-box" style="width: 60%;">
                 <img src="../img/LogoJUnit.png" alt="JUnit logo">
@@ -95,6 +111,8 @@
                 <p>Estrutura de teste unitário para Java. Elas permitem que os desenvolvedores escrevam e executem
                     testes automatizados para garantir que partes específicas de seus códigos estejam funcionando
                     corretamente</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://junit.org/junit5/docs/current/user-guide/"> JUnit</a></h4>
             </div>
         </div>
         <div class="card">
@@ -105,16 +123,20 @@
                 <h1>Cucumber</h1>
                 <p>Uma ferramenta de automação de teste baseada em comportamento que permite escrever testes em uma
                     linguagem de domínio específico (Gherkin) que é legível para não programadores.</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://cucumber.io/docs/cucumber/"> Cucumber</a></h4>
             </div>
         </div>
         <div class="card">
-            <div class="img-box" style="width: 100%;">
+            <div class="img-box" style="width: 85%;">
                 <img src="../img/LogoTestComplete.png" alt="TestComplete logo">
             </div>
             <div class="text-box">
                 <h1>Test Complete</h1>
                 <p>Uma ferramenta de automação de teste funcional que oferece suporte a testes em uma variedade de
                     plataformas, incluindo aplicativos da web, desktop e móveis.</p>
+                    <h4 class="linguagens">Linguagens: </h4>
+                    <h4>VISITE O SITE OFICIAL: <a href="https://support.smartbear.com/testexecute/docs/reference/tc-doc.html"> Test Complete</a></h4>
             </div>
         </div>
     </div>
@@ -127,6 +149,8 @@
                 <a href="paginasHtml/quemSomos.html">Quem Somos?</a>
                 <a href="https://github.com/Trabalho-3semestre/Trabalho-De-Site-de-Ferramenta-de-teste"
                     target="_blank">Github</a>
+                <a href="">Documentação</a>
+                <a href="">Figma</a>
             </div>
             <h5>Professor : </h5>
             <h5>Alunos : João Marques, Kauan Santos, João Cunha, Felipe Araujo, Lucas Santiago, Guilherme
@@ -137,21 +161,20 @@
         </div>
         <div id="versionamento">
             <ul>
-                <li><a href="https://github.com/Trabalho-3semestre/Trabalho-De-Site-de-Ferramenta-de-teste" target="_blank" rel="noopener noreferrer"><img src="../img/GitHub_logo.png" alt=""
-                            id="imgDeVG" class="gradiente-preto-branco"></a></li>
-                <li><a href="https://docs.google.com/document/d/1bvvQSoD0hx083QJH99gNVvcIebZEjMZHLiN_AR3hAVw/edit" target="_blank" rel="noopener noreferrer"><img
-                            src="../img/Google_Docs_logo_(2014-2020).svg.png" alt="" id="imgDeVD"
-                            class="gradiente-branco-azul"></a></li>
-                <li><a href="https://www.figma.com/file/4XkgmA49Z0QfI3Jp1V6M4C/FIGMA-A3?type=design&node-id=0-1&mode=design&t=fgFp6W7AslEFOs1B-0" target="_blank" rel="noopener noreferrer"><img src="../img/th-removebg-preview.png"
-                            id="imgDeVF" class="gradiente-roxo"></a></li>
-                <li><a href="https://trello.com/b/60mTT6Ee/trabalho-a3" target="_blank" rel="noopener noreferrer"><img src="../img/Trello-Emblem.png" alt=""
-                            id="imgDeVT"></a></li>
+                <li><a href="https://github.com/Trabalho-3semestre/Trabalho-De-Site-de-Ferramenta-de-teste"
+                        target="_blank" rel="noopener noreferrer"><img src="../img/GitHub_logo.png" alt="" id="imgDeVG"
+                            class="gradiente-preto-branco"></a></li>
+                <li><a href="https://docs.google.com/document/d/1bvvQSoD0hx083QJH99gNVvcIebZEjMZHLiN_AR3hAVw/edit"
+                        target="_blank" rel="noopener noreferrer"><img src="../img/Google_Docs_logo_(2014-2020).svg.png"
+                            alt="" id="imgDeVD" class="gradiente-branco-azul"></a></li>
+                <li><a href="https://www.figma.com/file/4XkgmA49Z0QfI3Jp1V6M4C/FIGMA-A3?type=design&node-id=0-1&mode=design&t=fgFp6W7AslEFOs1B-0"
+                        target="_blank" rel="noopener noreferrer"><img src="../img/th-removebg-preview.png" id="imgDeVF"
+                            class="gradiente-roxo"></a></li>
+                <li><a href="https://trello.com/b/60mTT6Ee/trabalho-a3" target="_blank" rel="noopener noreferrer"><img
+                            src="../img/Trello-Emblem.png" alt="" id="imgDeVT"></a></li>
             </ul>
         </div>
     </footer>
-    <div id="footerFinal">
-        <p>&#169 2024 All Rights Reserved </p>
-    </div>
 </body>
 
 </html>
