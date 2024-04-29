@@ -1,3 +1,5 @@
-import { paginaSelenium } from "./controladores/index.js";
+import { pesquisa, paginaSelenium } from "./controladores/index.js";
 
-document.getElementById("btnPesquisa").addEventListener("click", paginaSelenium);
+
+document.getElementById("btn-pesquisa").addEventListener("click", paginaSelenium);
+pesquisa
