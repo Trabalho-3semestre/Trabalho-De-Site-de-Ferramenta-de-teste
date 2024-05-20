@@ -1,0 +1,121 @@
+:root {
+    --cor-principal: #333333;
+    --cor-secundaria: white;
+    --azul1: #3153d0;
+    --azul2: #364c93;
+    --cinza1: #99aab5;
+    --cinza2: #2c2f33;
+    --cinza3: #23272a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    background-color: black;
+    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.55);
+    z-index: 1000;
+    font-family: "Seymour", sans-serif;
+}
+
+
+.nome-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nome-logo img {
+    width: 4rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 20rem;
+    height: 4rem;
+}
+
+.nome-logo a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* NavBar */
+.btn-navbar {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--cinza1);
+    border-radius: 7px;
+    margin-left: 1rem;
+}
+
+.link-navbar {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    margin-right: 3rem;
+}
+
+/* Caixa pesquisa header*/
+#pesquisa {
+    margin: 0;
+}
+
+#caixa-pesquisa {
+    height: 30px;
+}
+
+/* Header */
+
+#video-background {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
+}
+
+
+.QuemSomos {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    font-family: "Pacifico", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.QuemSomos h1 {
+    margin-top: 18vh;
+}
+
+.text-QuemSomos {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 10vh;
+}
+
+.paragrafo1,
+.paragrafo2 {
+    width: 40%;
+    margin: 2rem;
+}

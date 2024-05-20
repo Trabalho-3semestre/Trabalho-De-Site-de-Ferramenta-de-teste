@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
-    <script src="controllerCadastro.js" defer></script>
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <script type="module" src="../controladores/controllerCadastro.js" defer></script>
     <title>Cadastro</title>
 </head>
 <body>
     <div class="login-box">
         <div class="form-box">
-            <form action="#">
+            <form id="formulario" action="/usuarios/cadastro" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastrar-se</h1>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="btn-continue">
-                    <a href="../index.html"><button>Concluir</button></a>
+                    <button id="btnConcluir">Concluir</button>
                 </div>
             </form>
             <div class="quest-box">
