@@ -211,21 +211,19 @@ describe('Função de Cadastro', () => {
         expect(registros).to.include.deep.members([pessoa]);
     });
 
-    // Adicionando mais 10 testes
-
-    it('deve não adicionar um registro com todos os campos vazios se a validação for aplicada', () => {
+    it('não deve adicionar um registro com todos os campos vazios se a validação for aplicada', () => {
         if (validarCampo('') || validarCampo('') || validarCampo('')) {
             expect(() => adicionarRegistro('', '', '')).to.throw();
         }
     });
 
-    it('deve não adicionar um registro com campo nulo se a validação for aplicada', () => {
+    it('não deve adicionar um registro com campo nulo se a validação for aplicada', () => {
         if (validarCampo(null)) {
             expect(() => adicionarRegistro(null, 'email@teste.com', 'senha')).to.throw();
         }
     });
 
-    it('deve não adicionar um registro com campo undefined se a validação for aplicada', () => {
+    it('não deve adicionar um registro com campo undefined se a validação for aplicada', () => {
         if (validarCampo(undefined)) {
             expect(() => adicionarRegistro(undefined, 'email@teste.com', 'senha')).to.throw();
         }
