@@ -1,7 +1,8 @@
 import { expect } from 'chai';
 
+
 let i;
-let registros;
+let registros = [];
 
 function adicionarRegistro(nome, email, senha) {
     i++;
