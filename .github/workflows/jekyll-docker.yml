@@ -1,27 +1,31 @@
-name: Mostrar informações de commit e executar testes
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - main  
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  show-commit-info:
+  build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x] # Use a versão do Node.js que suporta módulos ES
+
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Instalar Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14' # ou a versão do Node.js que você está usando
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
 
-      - name: Instalar dependências
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Executar testes
-        run: npm test
-
-      - name: Mostrar informações de commit
-        run: echo "Commit feito por ${{ github.actor }} em ${{ github.repository }}/${{ github.sha }}"
+    - name: Run tests
+      run: npm test
