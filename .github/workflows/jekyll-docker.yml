@@ -1,20 +1,25 @@
-runs-on: ubuntu-latest
+name: Testes com Mocha
 
-steps:
-  - name: Checkout do código
-    uses: actions/checkout@v2
+on: [push, pull_request] # Este fluxo de trabalho será acionado em push e pull request
 
-  - name: Configurar Node.js
-    uses: actions/setup-node@v2
-    with:
-      node-version: '14'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v2
 
-  - name: Instalar dependências
-    run: |
-      echo "Instalando dependências..."
-      npm install
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-  - name: Executar testes com Node.js e módulos ESM
-  run: |
-    echo "Executando testes com Node.js e módulos ESM..."
-    npx mocha --require @babel/register --experimental-specifier-resolution=node --loader esm teste.spec.mjs
+      - name: Instalar dependências
+        run: |
+          echo "Instalando dependências..."
+          npm install
+
+      - name: Executar testes com Node.js e módulos ESM
+        run: |
+          echo "Executando testes com Node.js e módulos ESM..."
+          npx mocha --require @babel/register --experimental-specifier-resolution=node --loader esm teste.spec.mjs
