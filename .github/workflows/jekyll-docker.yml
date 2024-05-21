@@ -1,10 +1,11 @@
 name: Testes com Mocha
 
-on: [push, pull_request] # Este fluxo de trabalho será acionado em push e pull request
+on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do código
         uses: actions/checkout@v2
