@@ -15,6 +15,6 @@ steps:
       npm install
 
   - name: Executar testes com Node.js e módulos ESM
-    run: |
-      echo "Executando testes com Node.js e módulos ESM..."
-      npx mocha --experimental-specifier-resolution=node --loader esm teste.spec.mjs
+  run: |
+    echo "Executando testes com Node.js e módulos ESM..."
+    npx mocha --require @babel/register --experimental-specifier-resolution=node --loader esm teste.spec.mjs
