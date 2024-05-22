@@ -4,16 +4,12 @@
     "commitizen": "^4.3.0",
     "esm": "^3.2.25",
     "express": "^4.19.2",
-    "mocha": "^10.4.0",
     "pg": "^8.11.5",
     "sinon": "^17.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
-    "@babel/register": "^7.23.7",
     "chai": "^5.1.1",
-    "cz-conventional-changelog": "^3.3.0"
+    "mocha": "^10.4.0"
   },
   "config": {
     "commitizen": {
@@ -21,6 +17,6 @@
     }
   },
   "scripts": {
-    "test": "mocha --require @babel/register"
+    "test": "mocha --require esm --recursive"
   }
 }
