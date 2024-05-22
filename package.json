@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "commitizen": "^4.3.0",
+    "esm": "^3.2.25",
     "express": "^4.19.2",
     "mocha": "^10.4.0",
     "pg": "^8.11.5",
