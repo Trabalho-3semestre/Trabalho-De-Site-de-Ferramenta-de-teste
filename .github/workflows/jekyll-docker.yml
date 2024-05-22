@@ -20,8 +20,12 @@ jobs:
           echo "Instalando dependências..."
           npm install
 
+      - name: Instalar suporte a módulos ESM
+        run: |
+          echo "Instalando suporte a módulos ESM..."
+          npm install --save-dev esm
+
       - name: Executar testes com Node.js e módulos ESM
         run: |
           echo "Executando testes com Node.js e módulos ESM..."
           npx mocha --require esm --recursive
-
