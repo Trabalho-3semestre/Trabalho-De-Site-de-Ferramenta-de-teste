@@ -1,0 +1,129 @@
+:root {
+    --cor-principal: #333333;
+    --cor-secundaria: white;
+    --azul1: #3153d0;
+    --azul2: #364c93;
+    --cinza1: #99aab5;
+    --cinza2: #2c2f33;
+    --cinza3: #23272a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body {
+ 
+    background-image: linear-gradient(to top left, #444444 , #ffffff 60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--cinza3);
+}
+
+.nome-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#titulo {
+    margin-left: 20px;
+    font-size: 3rem;
+    font-family: "Seymour", sans-serif;
+    color: var(--cor-secundaria);
+}
+
+#links {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding-right: 2rem;
+
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+#logo {
+    width: 6rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 20rem;
+    height: 6rem;
+
+}
+
+/* Header */
+#title-page{
+    font-size: 24px;
+    text-align: left;
+    margin-left: 7%;
+    color: #353434;
+}
+
+/* #title-page h1{
+    font-family: "Pacifico", sans-serif;
+} */
+
+#body-container{
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+
+
+#destaque-container{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px 100px;
+    border-radius: 10px;
+
+}
+
+
+#framework-container{
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 10px 15px 30px 15px;
+    text-align: left;
+}
+
+#framework-container:last-child{
+    border: none;
+}
+
+
+#title-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#title-container span{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#title-container img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}

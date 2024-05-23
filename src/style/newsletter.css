@@ -1,0 +1,166 @@
+:root {
+    --cor-principal: #333333;
+    --cor-secundaria: white;
+    --azul1: #3153d0;
+    --azul2: #364c93;
+    --cinza1: #99aab5;
+    --cinza2: #2c2f33;
+    --cinza3: #23272a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--cinza3);
+}
+
+.nome-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#titulo {
+    margin-left: 20px;
+    font-size: 3rem;
+    font-family: "Seymour", sans-serif;
+    color: var(--cor-secundaria);
+}
+
+#links {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding-right: 2rem;
+
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+#logo {
+    width: 6rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 20rem;
+    height: 6rem;
+
+}
+
+/* Header */
+
+#video-background {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
+}
+
+@keyframes animationleft{
+  from{
+    transform: translateX(100%);
+  } to {
+    transform: translateX(0%);
+  }
+    
+
+}
+@keyframes animationright{
+  from{
+    transform: translateX(-100%);
+  } to {
+    transform: translateX(0%);
+  }
+    
+
+}
+
+.container-body{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    padding: 30px;
+    
+}
+
+#title-container{
+    font-size: 32px;
+    color: #ffff;
+    font-family: "Pacifico", sans-serif;
+
+}
+
+
+#title-container h1{
+    text-shadow: rgba(0, 0, 0, 0.599) 0.1em 0.1em 0.2em
+}
+
+
+#framework-container{
+    display: flex;
+    margin: 30px auto;
+    background-color: #ffff;
+    border-radius: 2rem;
+    font-size: 22px;
+    width: 80%;
+    box-shadow: 0 0 8px 1px #00000359, 8px 8px 16px 2px #00000359;
+    transition: box-shadow 0.3s;
+    animation-name: animationleft;
+    animation-duration: 2s;
+
+}
+
+
+#framework-container.right{
+    animation-name: animationright;
+}
+
+#framework-container.left{
+    animation-name: animationleft;
+}
+
+#framework-container:hover{
+    box-shadow: 0 0 16px 2px #2c2c2d7b, 16px 16px 32px 4px #2c2c2d7b;
+}
+#img-container{
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 15px;
+}
+
+#img-framework{
+    width: 90%;
+    height: 90%;
+}
+
+#framework-title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#framework-info{
+    text-align: left;
+    border-left: 1px solid #ccc;
+    margin: 10px 10px;
+    padding: 1rem;
+}

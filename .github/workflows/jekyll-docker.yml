@@ -26,6 +26,7 @@ jobs:
           npm install --save-dev esm
 
       - name: Executar testes com Node.js e módulos ESM
-        run: |
-          echo "Executando testes com Node.js e módulos ESM..."
-          npx mocha --require esm --recursive
+         run: |
+         echo "Executando testes com Node.js e módulos ESM..."
+          npx mocha test.transpiled.mjs
+

@@ -1,4 +1,5 @@
 function pesquisa() {
+    
     const pesquisaValor = document.querySelector('.inp-pesquisa').value;
     const padronizar = pesquisaValor.toLowerCase().trim();
     console.log("Valor padronizado:", padronizar);
@@ -6,9 +7,12 @@ function pesquisa() {
         console.log("O campo de pesquisa está vazio.");
         return ""; 
     }
-    const ferramentasDeTeste = ["selenium", "ranorex", "progress", "junit", "cucumber", "test"];
+    const ferramentasDeTeste = ["mais_usados","novidades"];
     const filtrar = ferramentasDeTeste.filter(a => a.toLowerCase() === padronizar);
     const encontrar = filtrar.length > 0 ? filtrar[0] : null;
+    if(encontrar == "novidades"){
+        return `http://127.0.0.1:5500/src/paginasHtml/newsletter.html`
+    }
     console.log(encontrar);
     return encontrar ? `http://127.0.0.1:5500/src/paginasHtml/${encontrar}.html` : "";
 }
