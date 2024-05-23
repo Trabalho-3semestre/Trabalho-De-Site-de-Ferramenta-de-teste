@@ -103,7 +103,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.btn-continue a{
+.btn-continue{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -116,12 +116,12 @@ body {
     text-decoration: none;
 }
 
-.btn-continue:hover a,
+.btn-continue:hover,
 .btn-continue:hover button {
     background-color: var(--azul2);
 }
 
-.btn-continue a button{
+.btn-continue button{
     background-color: var(--azul1);
     border: none;
 }

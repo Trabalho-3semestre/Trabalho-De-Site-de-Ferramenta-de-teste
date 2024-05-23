@@ -1,21 +1,35 @@
 function pesquisa() {
-    
     const pesquisaValor = document.querySelector('.inp-pesquisa').value;
     const padronizar = pesquisaValor.toLowerCase().trim();
+    
     console.log("Valor padronizado:", padronizar);
+    
     if (!padronizar) {
         console.log("O campo de pesquisa está vazio.");
         return ""; 
     }
-    const ferramentasDeTeste = ["mais_usados","novidades"];
+    
+    const ferramentasDeTeste = ["mais_usados", "newsletter"];
+    
+    // Verifica se a pesquisa é uma correspondência exata
     const filtrar = ferramentasDeTeste.filter(a => a.toLowerCase() === padronizar);
-    const encontrar = filtrar.length > 0 ? filtrar[0] : null;
-    if(encontrar == "novidades"){
-        return `http://127.0.0.1:5500/src/paginasHtml/newsletter.html`
+    
+    // Se não for uma correspondência exata, verifica correspondências parciais
+    const correspondenciaParcial = ferramentasDeTeste.find(a => a.toLowerCase().includes(padronizar));
+    
+    // Se houver uma correspondência exata, retorna o link diretamente
+    if (filtrar.length > 0) {
+        return `http://127.0.0.1:5500/src/paginasHtml/${filtrar[0]}.html`;
+    } 
+    // Se houver uma correspondência parcial, retorna o link correspondente
+    else if (correspondenciaParcial) {
+        return `http://127.0.0.1:5500/src/paginasHtml/${correspondenciaParcial}.html`;
+    } else {
+        console.log("Nenhuma correspondência encontrada.");
+        return "";
     }
-    console.log(encontrar);
-    return encontrar ? `http://127.0.0.1:5500/src/paginasHtml/${encontrar}.html` : "";
 }
+
 
 function paginaSelenium(ev) {
     ev.preventDefault();

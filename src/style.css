@@ -329,8 +329,8 @@ footer>div>ul {
 }
 
 .card:hover {
-    width: 600px;
-    height: 450px;
+    width: 500px;
+    height: 400px;
 }
 
 .card .img-box {
