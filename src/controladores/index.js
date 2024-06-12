@@ -19,15 +19,15 @@ function pesquisa() {
     
     // Se houver uma correspondência exata, retorna o link diretamente
     if (filtrar.length > 0) {
-        return `http://127.0.0.1:5500/src/paginasHtml/${filtrar[0]}.html`;
-    } 
-    // Se houver uma correspondência parcial, retorna o link correspondente
+        window.location.href = `/src/paginasHtml/${filtrar[0]}.html`;
+    }
+    // Se houver uma correspondência parcial, redireciona para o link correspondente
     else if (correspondenciaParcial) {
-        return `http://127.0.0.1:5500/src/paginasHtml/${correspondenciaParcial}.html`;
+        window.location.href = `/src/paginasHtml/${correspondenciaParcial}.html`;
     } else {
         console.log("Nenhuma correspondência encontrada.");
-        return "";
     }
+    
 }
 
 
