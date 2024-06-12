@@ -19,14 +19,16 @@ function pesquisa() {
     
     // Se houver uma correspondência exata, retorna o link diretamente
     if (filtrar.length > 0) {
-        window.location.href = `/src/paginasHtml/${filtrar[0]}.html`;
-    }
+        window.location.href = `https://trabalho-3semestre.github.io/Trabalho-De-Site-de-Ferramenta-de-teste/src/paginasHtml/${filtrar[0]}.html`;
+    } 
     // Se houver uma correspondência parcial, redireciona para o link correspondente
     else if (correspondenciaParcial) {
-        window.location.href = `/src/paginasHtml/${correspondenciaParcial}.html`;
+        window.location.href = `https://trabalho-3semestre.github.io/Trabalho-De-Site-de-Ferramenta-de-teste/src/paginasHtml/${correspondenciaParcial}.html`;
     } else {
         console.log("Nenhuma correspondência encontrada.");
     }
+    
+    
     
 }
 
